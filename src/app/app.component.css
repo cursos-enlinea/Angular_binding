@@ -1,0 +1,24 @@
+.title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.container {
+    padding-left: 20px;
+}
+.flex{
+    display: flex;
+}
+
+.izquierda {
+    width: 50%;
+}
+.derecha {
+    width: 50%;;
+}
+.green {
+    background-color: rgba(26, 214, 38, 0.3);
+}
+.rosa {
+    background-color: rgba(233, 153, 225, 0.3);
+}
