@@ -1,30 +1,29 @@
-<h2>Componente Padre crea el objeto lo agrega a un arreglo</h2>
+<h2>Componente Padre crea el objeto lo agrega a un arreglo y pasa la información al hijo</h2>
 <form 
-class="form-row" 
+class="form" 
 (ngSubmit)="onSubmit(f)" #f="ngForm">
-    <div class="form-group col-md-2">
+<div class="flex">
+    <div class="form-group col-md-5">
         <input 
         type="text" 
-        id="nombre" 
         class="form-control" 
         ngModel name="nombre" 
-        required nombre 
         #nombre="ngModel" 
         placeholder="Nombre" >
     </div>
-    <div class="form-group col-md-2">
+    <div class="form-group col-md-5">
         <input 
         type="text" 
-        id="apellido" 
         class="form-control" 
         ngModel name="apellido" 
-        required apellido 
         #apellido="ngModel" 
         placeholder="Apellido" >
     </div>
+</div>
+
     <div class="form-group row">
         <div class="col-sm-10">
-            <button type="submit" class="btn btn-primary">Sign in</button>
+            <button type="submit" class="btn btn-primary">Procesar datos desde el padre</button>
         </div>
     </div>
 </form>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Persona } from '../input-parent-child/persona';
 
 @Component({
   selector: 'app-output-child-parent',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class OutputChildParentComponent {
 
+  personas: Persona [] = [
+    new Persona ('Andrés', 'Martínez'),
+    new Persona ('Mario', 'Martínez')
+  ];
+
+  personaCreada(persona: Persona){
+    this.personas.push(persona)
+  }
 }

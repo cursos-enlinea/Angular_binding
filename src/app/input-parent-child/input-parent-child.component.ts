@@ -19,5 +19,6 @@ export class InputParentChildComponent {
     const f = form.value;
     const persona = new Persona(f.nombre, f.apellido);
     this.personas.push(persona);
+    form.reset()
   }
 }

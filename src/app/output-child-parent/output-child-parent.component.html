@@ -1,2 +1,7 @@
-<p>output-child-parent works!</p>
-<app-children></app-children>
+<h2>Componente Padre recibe el objeto creado lo agrega a un arreglo y lo muestra</h2>
+<div *ngFor="let persona of personas; let i = index">
+    {{ i + 1 }}: {{ persona.name}} {{persona.lastName}}
+</div>
+<app-children
+    (personaCreada)="personaCreada($event)"
+></app-children>
